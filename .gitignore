@@ -1,0 +1,7 @@
+# This case-study repository publishes only the approved overview.
+/*
+!/README.md
+!/.gitignore
+!/docs/
+/docs/*
+!/docs/engineering.md
