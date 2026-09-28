@@ -1,0 +1,13 @@
+{
+  "policy": {"cover_days": 15, "display_floor": 1, "main_push_floor": 2, "warehouse_reserve": 2},
+  "warehouse": {"SKU-RED": 8, "SKU-BLUE": 6, "SKU-TRANSIT": 10, "SKU-DISABLED": 10},
+  "avoidance": [["STORE-ALPHA", "STORE-BETA"]],
+  "rows": [
+    {"sku": "SKU-RED", "style": "STYLE-01", "store": "STORE-ALPHA", "store_brand": "BRAND-A", "sales_7d": 4, "sales_30d": 8, "sales_90d": 20, "main_push": true},
+    {"sku": "SKU-BLUE", "style": "STYLE-01", "store": "STORE-BETA", "store_brand": "BRAND-A", "sales_7d": 3, "sales_30d": 6, "sales_90d": 15},
+    {"sku": "SKU-BLUE", "style": "STYLE-01", "store": "STORE-GAMMA", "store_brand": "BRAND-A", "sales_7d": 1, "sales_30d": 6, "sales_90d": 8},
+    {"sku": "SKU-RED", "style": "STYLE-01", "store": "STORE-GAMMA", "store_brand": "BRAND-A", "sales_7d": 1, "sales_30d": 8, "sales_90d": 8},
+    {"sku": "SKU-TRANSIT", "style": "STYLE-02", "store": "STORE-ALPHA", "store_brand": "BRAND-A", "in_order": 1, "sales_30d": 10, "sales_90d": 25},
+    {"sku": "SKU-DISABLED", "style": "STYLE-03", "store": "STORE-BETA", "store_brand": "BRAND-A", "compatible": false, "sales_30d": 10}
+  ]
+}

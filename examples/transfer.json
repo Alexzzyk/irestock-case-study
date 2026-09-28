@@ -1,0 +1,10 @@
+{
+  "policy": {"cover_days": 15, "display_floor": 1, "main_push_floor": 2, "warehouse_reserve": 2},
+  "rows": [
+    {"sku": "SKU-RED", "style": "STYLE-01", "store": "STORE-DONOR", "store_brand": "BRAND-A", "stock": 9, "sales_30d": 4, "sales_90d": 10},
+    {"sku": "SKU-RED", "style": "STYLE-01", "store": "STORE-MAIN", "store_brand": "BRAND-A", "sales_7d": 4, "sales_30d": 8, "sales_90d": 20, "main_push": true},
+    {"sku": "SKU-RED", "style": "STYLE-01", "store": "STORE-OTHER", "store_brand": "BRAND-B", "sales_7d": 10, "sales_30d": 12, "sales_90d": 30},
+    {"sku": "SKU-RED", "style": "STYLE-01", "store": "STORE-SECOND", "store_brand": "BRAND-A", "sales_30d": 8, "sales_90d": 15},
+    {"sku": "SKU-RED", "style": "STYLE-01", "store": "STORE-PENDING", "store_brand": "BRAND-A", "in_transit": 1, "sales_30d": 10}
+  ]
+}

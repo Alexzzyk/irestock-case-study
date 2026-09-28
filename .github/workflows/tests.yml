@@ -1,0 +1,20 @@
+name: Engineering demo tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.11", "3.13"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e ".[dev,web,excel]"
+      - run: python -m pytest -q
+      - run: python -m irestock_demo --input examples/replenishment.json --output outputs/replenishment --excel
+      - run: python -m irestock_demo --input examples/transfer.json --mode transfer --output outputs/transfer --excel

@@ -1,7 +1,27 @@
-# This case-study repository publishes only the approved overview.
+# Explicit allowlist prevents accidental publication of client deliverables.
 /*
-!/README.md
 !/.gitignore
+!/README.md
+!/pyproject.toml
+!/src/
+!/tests/
+!/examples/
 !/docs/
+!/.github/
 /docs/*
 !/docs/engineering.md
+!/docs/public-demo.md
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+.venv/
+.pytest_cache/
+outputs/
+*.db
+*.sqlite*
+*.xlsx
+*.xls
+*.zip
+*.exe
+.env*
+session_secret.txt
